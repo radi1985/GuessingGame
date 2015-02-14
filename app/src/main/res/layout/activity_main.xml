@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/TextViewTitle">
+
+    <TextView android:text="@string/TextViewTitle" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewTitle"
+        android:textColor="#ff272cff"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/TextViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewDesc"
+        android:textColor="#ff272cff"
+        android:layout_below="@+id/TextViewTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Left"
+        android:id="@+id/buttonLeft"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="buttonLeft_Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonRight"
+        android:id="@+id/buttonRight"
+        android:layout_alignTop="@+id/buttonLeft"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonRight_Click" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewPoint"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
